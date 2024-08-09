@@ -1,0 +1,33 @@
+@import 'variables';
+
+.header {
+    display: flex;
+
+    &__left {
+        width: 40%;
+        margin: 80px 0px;
+        align-self: center;
+    }
+
+    &__right {
+        width: 60%;
+        margin: 80px 0px;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 60px;
+        color: $primary-color;
+    }
+
+    &__img {
+        width: 400px;
+        /* 设置宽度 */
+        height: 400px;
+        /* 设置高度 */
+        clip-path: circle(50% at 50% 50%);
+        /* 将图片裁剪为圆形 */
+        object-fit: cover;
+        /* 确保图片覆盖整个圆形区域 */
+    }
+}

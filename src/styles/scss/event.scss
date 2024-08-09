@@ -1,0 +1,118 @@
+@import 'variables';
+
+.event {
+    display: flex;
+
+    &__left {
+        width: 40%;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 500px;
+            border-radius: 1%;
+        }
+
+        &__desc {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* 黑色背景，50% 透明度 */
+            color: white;
+            /* 文字颜色为白色 */
+            display: flex;
+            /* 使用 Flexbox 对齐文字 */
+            justify-content: center;
+            /* 水平居中 */
+            align-items: center;
+            /* 垂直居中 */
+            opacity: 1;
+            /* 初始时隐藏覆盖层 */
+            transition: opacity 0.3s ease;
+            /* 添加过渡效果 */
+        }
+    }
+
+    &__right {
+        width: 60%;
+        margin-top: 20px;
+    }
+
+    &__search {
+        background-color: $light-bg-color;
+        border: none;
+        /* 去掉边框 */
+        border-radius: 0;
+        /* 去掉圆角 */
+        outline: none;
+        /* 去掉焦点时的外边框 */
+        box-shadow: none;
+        /* 去掉阴影 */
+        padding: 10px 0px;
+        /* 添加内边距，让输入框看起来更大一些 */
+        color: $dark-primary-color;
+        margin-left: 30px;
+    }
+
+    &__list {
+        margin: 0px;
+        list-style-type: none;
+
+        &__item {
+            list-style-type: none;
+            justify-content: space-between;
+            display: flex;
+            margin: 20px 0px;
+            background-color: $light-bg-color;
+
+            &__date {
+                display: flex;
+                padding-left: 10px;
+
+                &__day {
+                    font-size: 42px;
+                    margin-right: 8px;
+                    color: $secondary-color;
+                    font-weight: bold;
+                }
+
+                &__mw {
+                    align-self: center;
+                    color: $dark-primary-color;
+
+                    :first-child {
+                        display: block;
+                    }
+                }
+            }
+
+            &__title {
+                padding-left: 20px;
+                align-self: center;
+            }
+
+            &__time {
+                padding-left: 20px;
+                align-self: center;
+                color: $dark-primary-color;
+            }
+
+            &__btn {
+                padding: 20px;
+                background-color: $secondary-color;
+                border-radius: 5%;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    height: 100%;
+                    display: block;
+                    align-self: center;
+                }
+            }
+        }
+    }
+}

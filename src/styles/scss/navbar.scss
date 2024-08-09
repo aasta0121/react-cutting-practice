@@ -1,0 +1,39 @@
+@import 'variables';
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    &__logo {
+        font-size: 1.2em;
+        color: $primary-color;
+    }
+
+    &__container {
+        display: flex;
+    }
+
+    &__links {
+        display: inline-flex;
+
+        li {
+            margin-left: 10px;
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+    &__btns {
+        list-style-type: none;
+        display: inline-flex;
+
+        li {
+            margin-left: 10px;
+        }
+    }
+}

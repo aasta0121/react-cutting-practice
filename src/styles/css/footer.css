@@ -1,0 +1,10 @@
+.footer {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-image: linear-gradient(to right, #747bff, #a930fb);
+}
+
+/*# sourceMappingURL=footer.css.map */
